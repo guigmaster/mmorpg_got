@@ -1,0 +1,14 @@
+{
+  "name": "mmorpg_got",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "author": "Davi de Barros <davibarros@hotmail.com>",
+  "contributors": [
+    "Guilherme Silva <guisilva.master@gmail.com>"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
+}
