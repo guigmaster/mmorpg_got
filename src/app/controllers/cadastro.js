@@ -1,5 +1,6 @@
 module.exports = {
   cadastro: function(application, req, res) {
+
     res.render('cadastro', { validacao: {}, dadosForm: {} });
   },
 
@@ -19,10 +20,10 @@ module.exports = {
       return;
     }
 
-    // var connection = application.config.dbConnection;
-    // var UsuariosDAO = new application.app.models.UsuariosDAO(connection);
-    //
-    // UsuariosDAO.inserirUsuario(dadosForm);
+    var connection = application.db;
+    var UsuariosDAO = new application.models.UsuariosDAO(connection);
+
+    UsuariosDAO.inserirUsuario(dadosForm);
 
     res.send('podemos cadastrar');
 
